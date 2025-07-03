@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Device management and process delivery</description>
+        <device_type>browser</device_type>
+        <hint>Device management and process delivery</hint>
+        <name/>
+        <order/>
+        <roles>x_1531514_dispatch.device_management,x_1531514_dispatch.dispatch_management,x_1531514_dispatch.release_management,x_1531514_dispatch.end_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 16:16:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f7dc0e4983a62210ad4fa750ceaad319</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dispatch Management</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Dispatch Management" source="x_1531514_dispatch">37facec583a62210ad4fa750ceaad349</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dispatch Management">37facec583a62210ad4fa750ceaad349</sys_scope>
+        <sys_update_name>sys_app_application_f7dc0e4983a62210ad4fa750ceaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 16:16:22</sys_updated_on>
+        <title>Dispatch Management</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-03 16:15:55</sys_created_on>
+        <sys_id>51cccec983a62210ad4fa750ceaad35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1531514_dispatch_device_request.x_1531514_dispatch.device_management</sys_name>
+        <sys_package display_value="Dispatch Management" source="x_1531514_dispatch">37facec583a62210ad4fa750ceaad349</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dispatch Management">37facec583a62210ad4fa750ceaad349</sys_scope>
+        <sys_security_acl display_value="x_1531514_dispatch_device_request">ddcccec983a62210ad4fa750ceaad35a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_51cccec983a62210ad4fa750ceaad35e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-03 16:15:55</sys_updated_on>
+        <sys_user_role display_value="x_1531514_dispatch.device_management" name="x_1531514_dispatch.device_management">13bb4ac583a62210ad4fa750ceaad3f1</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
