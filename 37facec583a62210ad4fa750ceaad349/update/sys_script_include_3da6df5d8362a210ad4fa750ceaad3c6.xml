@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1531514_dispatch.DeviceRequestUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DeviceRequestUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var DeviceRequestUtils = Class.create();
+DeviceRequestUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getDeviceDetails: function () {
+		const deviceID = this.getParameter("sysparm_id");
+
+		try {
+			const gr = new GlideRecord("x_1531514_dispatch_ai_devices");
+			gr.addQuery("sys_id", deviceID);
+			gr.query();
+
+			if (gr.next()) {
+				const deviceDetails = {
+					model: gr.getValue("model_number"),
+					price: gr.getValue("price"),
+					deviceDesc: gr.getValue("short_description"),
+					warrantyExp: gr.getValue("warranty_expiration")
+				};
+
+				return JSON.stringify(deviceDetails);
+			}
+		} catch (err) {
+			gs.error("ERROR || DeviceRequestUtils || " + err);
+		}
+	},
+
+	type: 'DeviceRequestUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-04 17:23:15</sys_created_on>
+        <sys_id>3da6df5d8362a210ad4fa750ceaad3c6</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>DeviceRequestUtils</sys_name>
+        <sys_package display_value="Dispatch Management" source="x_1531514_dispatch">37facec583a62210ad4fa750ceaad349</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Dispatch Management">37facec583a62210ad4fa750ceaad349</sys_scope>
+        <sys_update_name>sys_script_include_3da6df5d8362a210ad4fa750ceaad3c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-04 18:13:21</sys_updated_on>
+    </sys_script_include>
+</record_update>
